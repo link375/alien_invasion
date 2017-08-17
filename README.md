@@ -17,7 +17,6 @@ If an alien hits the player's ship or reaches the bottom of the screen the playe
 
 If the player loses 3 ships the game ends
 
-#######################REQUIRMENTS#############################
 
 # Dependencies
 
@@ -31,7 +30,7 @@ or
 
 pip3 install -U pip3
 
-# install pip
+# Install pip
 python3 get-pip.py
 
 verify you have pip by running
