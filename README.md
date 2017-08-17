@@ -17,4 +17,46 @@ If an alien hits the player's ship or reaches the bottom of the screen the playe
 
 If the player loses 3 ships the game ends
 
+#######################REQUIRMENTS#############################
 
+# Dependencies
+
+# Ubuntu
+
+- replace pip3 with pip if you are using python 2.7
+
+sudo python get-pip.pi
+or
+pip3 install -U pip3
+
+# install pip
+python3 get-pip.py
+
+verify you have pip by running
+pip3 -- version 
+
+# Pygame Library
+
+- download the packages
+sudo apt-get install python-pygame
+sudo apt-get install python3-dev mercurial
+ 
+- to add sounds you need the following libraries as well
+sudo apt-get install libsdl-image1.2-dev libsdl2-dev libsdl-ttf2.0-dev
+sudo apt-get install libsdl-mixer1.2-dev libportmidi-dev
+sudo apt-get install libswscale-dev libsmpeg-dev libavformat-dev libavcode-dev
+sudo apt-get install python-numpy
+sudo apt-get install libfreetype6-dev
+
+upgrade matplotlib
+sudo pip3 install matplotlib --upgrade
+
+#installation
+pip3 install --user hg+http://bitbucket.org/pygame/pygame
+
+# secondary installation
+If trying the steps above does not work try the following commands
+
+sudo apt-get install python3-pip
+pip3 install --upgrade pip
+pip3 install pygame
