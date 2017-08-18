@@ -3,6 +3,7 @@ import pygame
 from settings import Settings
 from ship import Ship
 
+
 def run_game():
     # Initialize pygame, settings and create a screen object.
     pygame.init()
@@ -11,7 +12,6 @@ def run_game():
     # use the ai_settings object to draw a screen
     screen = pygame.display.set_mode((ai_settings.screen_width, ai_settings.screen_height ))
     pygame.display.set_caption("Alien Invasion")
-
 
     # make a ship
     ship = Ship(screen)
