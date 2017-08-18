@@ -22,20 +22,17 @@ If the player loses 3 ships the game ends
 
 # Ubuntu
 
-- replace pip3 with pip if you are using python 2.7
+# Python 2.7
 
 sudo python get-pip.pi
 
-or
-
-pip3 install -U pip3
 
 # Install pip
-python3 get-pip.py
+python get-pip.py
 
 verify you have pip by running
 
-pip3 -- version 
+pip -- version 
 
 # Pygame Library
 
@@ -62,13 +59,18 @@ upgrade matplotlib
 sudo pip3 install matplotlib --upgrade
 
 #Installation
-pip3 install --user hg+http://bitbucket.org/pygame/pygame
+pip install --user hg+http://bitbucket.org/pygame/pygame
 
-# Secondary installation
-If trying the steps above does not work try the following commands
+#  Python 3.x Installation
 
-sudo apt-get install python3-pip
 
-pip3 install --upgrade pip
+#install dependencies
+sudo apt-get install mercurial python3-dev python3-setuptools python3-numpy python3-opengl libav-tools libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsmpeg-dev libsdl1.2-dev libportmidi-dev libswscale-dev libavformat-dev libavcodec-dev libtiff5-dev libx11-6 libx11-dev fluid-soundfont-gm timgm6mb-soundfont xfonts-base xfonts-100dpi xfonts-75dpi xfonts-cyrillic fontconfig fonts-freefont-ttf
 
-pip3 install pygame
+# Grab source
+hg clone https://bitbucket.org/pygame/pygame
+
+# Finally build and install
+cd pygame
+python3 setup.py build
+sudo python3 setup.py install
