@@ -40,7 +40,7 @@ pip -- version
 
 sudo apt-get install python-pygame
 
-sudo apt-get install python3-dev mercurial
+sudo apt-get install python-dev mercurial
  
 - to add sounds you need the following libraries as well
 
