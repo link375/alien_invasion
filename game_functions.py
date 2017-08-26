@@ -28,7 +28,7 @@ def check_keyup_events(event, ship):
     # when the player releases the button
     # set the flag to false again
     if event.key == pygame.K_RIGHT:
-            ship.moving_right = False
+        ship.moving_right = False
     elif event.key == pygame.K_LEFT:
         ship.moving_left = False
 
