@@ -20,11 +20,11 @@ If the player loses 3 ships the game ends
 
 # Dependencies
 
-# Ubuntu
+# Tested on Ubuntu 16.04
 
 # Python 2.7
 
-sudo python get-pip.pi
+sudo python get-pip.py
 
 
 # Install pip
@@ -38,33 +38,24 @@ pip -- version
 
 - download the packages
 
-sudo apt-get install python-pygame
-
-sudo apt-get install python-dev mercurial
+sudo apt-get install python-pygame python-dev mercurial
  
 - to add sounds you need the following libraries as well
 
-sudo apt-get install libsdl-image1.2-dev libsdl2-dev libsdl-ttf2.0-dev
+sudo apt-get install libsdl-image1.2-dev libsdl2-dev libsdl-ttf2.0-dev libsdl-mixer1.2-dev libportmidi-dev
+libswscale-dev libsmpeg-dev libavformat-dev libavcode-dev python-numpy libfreetype6-dev
 
-sudo apt-get install libsdl-mixer1.2-dev libportmidi-dev
+- upgrade matplotlib
 
-sudo apt-get install libswscale-dev libsmpeg-dev libavformat-dev libavcode-dev
+sudo pip install matplotlib --upgrade
 
-sudo apt-get install python-numpy
+- Installation
 
-sudo apt-get install libfreetype6-dev
-
-upgrade matplotlib
-
-sudo pip3 install matplotlib --upgrade
-
-#Installation
 pip install --user hg+http://bitbucket.org/pygame/pygame
 
 #  Python 3.x Installation
 
-
-#install dependencies
+- install dependencies
 
 sudo apt-get install mercurial python3-dev python3-setuptools python3-numpy python3-opengl libav-tools libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsmpeg-dev libsdl1.2-dev libportmidi-dev libswscale-dev libavformat-dev libavcodec-dev libtiff5-dev libx11-6 libx11-dev fluid-soundfont-gm timgm6mb-soundfont xfonts-base xfonts-100dpi xfonts-75dpi xfonts-cyrillic fontconfig fonts-freefont-ttf
 
