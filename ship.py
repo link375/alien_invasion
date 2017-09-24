@@ -1,6 +1,5 @@
 import pygame
 
-
 class Ship():
 
     def __init__(self, ai_settings, screen):
@@ -15,10 +14,10 @@ class Ship():
 
         # start each new ship at the bottom center of the screen
         # define the center of the screen
-        self.rect.centerx = self.screen_rect.centerx
         # define the bottom center
         self.rect.centerx = self.screen_rect.centerx
         self.rect.bottom = self.screen_rect.bottom
+
 
         # Store a decimal value for the ship's center
         self.center = float(self.rect.centerx)
