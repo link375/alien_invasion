@@ -16,6 +16,8 @@ def check_keydown_events(event, ai_settings, screen, ship, bullets):
         if len(bullets) < ai_settings.bullets_allowed:
             new_bullet = Bullet(ai_settings, screen, ship)
             bullets.add(new_bullet)
+    elif event.key == pygame.K_q:
+            sys.exit()
 
 
 def check_keyup_events(event, ship):
@@ -53,3 +55,15 @@ def update_screen(ai_settings, screen, ship, bullets):
 
     # Make the most recently drawn screen visible
     pygame.display.flip()
+
+def update_bullets(bullets):
+    """Update position of bullets and get rid of old bullets."""
+    # Update bullet positions.
+    bullets.update()
+
+# Get rid of bullets that have disappeared.
+    for bullet in bullets.copy():
+        if bullet.rect.bottom <= 0:
+            bullets.remove(bullet)
+
+    print(len(bullets))  # DEBUGGING
