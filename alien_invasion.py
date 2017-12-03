@@ -23,8 +23,8 @@ def run_game():
     bullets = Group()
 
     # Start the main loop for the game.
-    while True:q
-        # check events from the game functions file
+    while True:
+    # check events from the game functions file
         gf.check_events(ai_settings, screen, ship, bullets)
         ship.update()
         gf.update_bullets(bullets)
