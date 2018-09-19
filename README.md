@@ -20,6 +20,7 @@ If the player loses 3 ships the game ends
 # launch
 
 virtualenv venv
+
 source venv/bin/activate 
 
 pip install requirements.txt
